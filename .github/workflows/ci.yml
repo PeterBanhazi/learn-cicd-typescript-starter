@@ -24,5 +24,8 @@ jobs:
       - name: Style
         run: npm run format:check
 
+      - name: eslint check
+        run: npm run lint
+
       - name: Do the tests
         run: npm run test -- --coverage
